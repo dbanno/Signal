@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signal - Idle Network</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>Signal</h1>
+        <p class="tagline">Rebuild the lost whispers between stars.</p>
+      </header>
+
+      <section class="stats" aria-label="Resources">
+        <div class="stat">
+          <h2>Bandwidth</h2>
+          <p id="bandwidth">0</p>
+        </div>
+        <div class="stat">
+          <h2>Data Packets</h2>
+          <p id="dataPackets">0</p>
+        </div>
+        <div class="stat">
+          <h2>Relay Stations</h2>
+          <p id="relayStations">0</p>
+        </div>
+        <div class="stat">
+          <h2>Range</h2>
+          <p id="range">0</p>
+        </div>
+        <div class="stat">
+          <h2>Signal Efficiency</h2>
+          <p id="efficiency">100%</p>
+        </div>
+      </section>
+
+      <section class="panels">
+        <article class="panel" aria-label="Primary controls">
+          <h2>Network Operations</h2>
+          <button id="pingProbe" class="btn">Ping a Probe</button>
+          <button id="expandRange" class="btn">Expand Range</button>
+          <button id="buildRelay" class="btn">Deploy Relay Station</button>
+          <button id="optimize" class="btn">Optimize Routing</button>
+        </article>
+
+        <article class="panel" aria-label="Signal Overlap">
+          <h2>Signal Overlap</h2>
+          <p class="panel__text">
+            Align frequencies to weave a resonance. When multiple transmissions overlap,
+            their interference crystallizes into insight, accelerating the rebuild.
+          </p>
+          <button id="overlapSignals" class="btn">Overlap Signals</button>
+          <p id="overlapStatus" class="panel__status">Awaiting harmonic partners…</p>
+        </article>
+
+        <article class="panel" aria-label="Discoveries">
+          <h2>Contacts</h2>
+          <ul id="contacts" class="panel__list"></ul>
+        </article>
+
+        <article class="panel" aria-label="Ascension">
+          <h2>Reboot the Universe</h2>
+          <p class="panel__text">
+            Collapse the lattice and begin anew with stronger antennas. Signal efficiency persists.
+          </p>
+          <button id="ascend" class="btn btn--prestige" disabled>Initiate Reboot</button>
+        </article>
+      </section>
+
+      <footer class="app__footer">
+        <p>Silence is full of messages if you listen long enough.</p>
+      </footer>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
